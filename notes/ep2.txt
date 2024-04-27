@@ -1,0 +1,77 @@
+Date : 26/04/24
+Friday
+
+<!-- ========== Start Section ========== -->
+
+
+
+- Package.json is the configuration of NPM
+
+- What is Bundle ? webpack, parcel, wit.
+
+- Two types of dependencies (NPM) - 1. Depth dependencies - Generally requirement for development, 2. Normal dependencies - Also use in production
+
+- What is tilled(~) and caret(^) in package.json
+    - tilled(~version) - Update your apps helps to in major upgrade version like current version in your app 1.0.2 , then 2.0.3 available then it used 2.0.3
+    - carat(^version) - Update your apps helps to in minor upgrade version like current version in your app 1.0.2 , then 1.0.3 available then it used 1.0.3
+ not higher version <>1
+
+- dependencies vs devDependencies in package.json
+
+- Difference between in package.json - Keeps the approx. version of packages or reps. and package-lock.json - Keeps the all things and exact version details inside it. 
+
+- What is integrity in package-lock.json ? Why keeps hash string as value ?
+
+- What is node_modules? -> contains all the code of dependencies 
+
+- Why node_modules is huge? -> Let’s say you install A deep -> A deps need other B, C, D (transitive dependency) deps so it is become nested structure so that’s why node_module becomes huge folder
+ npx parcel index.html (Source File)
+    - Npx is execute the dependency then parcel is  convert code into the build and then it host into localhost server , So now code running on http://localhost:1234 like this
+
+<script type=“module” …>
+    - If we use import or exports in our simple javascript file which injected in Html then it throws the error like browser doesn’t understand import or exports, So that’s reason we can put type=“module” it say this is not simple javascript file and now it allows module functionality (import or export)
+
+Parcel (https://parcel.org)
+    - Dev Build
+    - Local Server
+    - HMR - Hot Module Replacement 
+    - How it doing HMR ? -> File Watching algorithm - written in c++
+    - Caching - faster builds
+    - Image optimisation
+    - Magnification
+    - Bundling
+    - Compress
+    - Consistant Hashing
+    -  Code Splitting
+    - Differential Bundling - Support older browser
+    - Diagnostic
+    - Error Handling
+    - HTTPS  - allow to ssl
+    - Chunking
+    - Tree Shaking - remove extra code or un usable code / compress your code
+    - Different between dev and prod bundles
+    - When you build using parse command make sure first in package.json file remove main key bcz it’s think it is entry point of our app.
+        - @parcel/namer-default: Target "main" declares an output file path of "App.js" which does not match the compiled bundle type "html".
+    - Build Command - npx parcel build index.html
+
+- Role of git between local and server code 
+
+Browserlist
+- It using for configuration allows of browsers with all versions 
+- {“browerersList”:[“Last 2 versions”]} // write in package.json file
+
+
+Key points you learn 
+- What are bundlers?
+- NPM
+- gitignore
+- parcel
+- .parcel_cache
+- dist (production build)
+- node_modules
+- package.json and package-lock.json
+- How HMR is working ?
+- Why parcel is the beast ?
+
+
+<!-- ========== End Section ========== -->

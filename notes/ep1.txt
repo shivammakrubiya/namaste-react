@@ -1,4 +1,6 @@
 <!-- ========== Start Section ========== -->
+Date : 25/04/24
+thursday
 
 1. Hello World program in HTML
 2. Hello World program using Js
