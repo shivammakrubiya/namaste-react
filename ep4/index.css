@@ -44,3 +44,14 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.filter-btn {
+    margin: 10px;
+    background-color: lightblue;
+    border: 1px solid blue;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+}

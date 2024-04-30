@@ -1,0 +1,56 @@
+Date : 29/04/2024
+Monday
+
+Ep - 5
+
+<!-- ========== Start Section ========== -->
+
+/**
+ * App Layout
+ *  - Header
+ *      - Navbar
+ *      - Logo
+ *  - Body
+ *      - Search
+ *      - Cards
+ *  - Footer
+ *      - Links
+ *      - CopyRight
+ *      - Contact
+ */
+
+
+What Is mock Data and Live Data?
+What is props dealing?
+
+React Hooks : - A: In React version 16.8, React introduced a new pattern called Hooks. React Hooks are simple JavaScript functions that we can use to isolate the reusable part from a functional component. Hooks can be stateful and can manage side-effects.
+Hooks allow you to reuse stateful logic without changing your component hierarchy. This makes it easy to share Hooks among many components or with the community.
+
+React provides a bunch of standard in-built hooks:
+
+- useState: To manage states. Returns a stateful value and an updater function to update it. Re render the component.
+
+When use the common data people can say like -> utils.js, config.js, constant.js, common.js
+
+Two types of import/export
+- Default import Export 
+    - export default Component;
+    - Import Component from “path”
+- Named import/export
+    - export const Component; // used when the file is exporting multiple things
+    - Import {Component} from “path”;
+
+Important Note :- Your file should not more than exists 100 line , if it is , you do wrong something (Uber)
+
+React Js Fast:- Updating DOM manipulation fast (Virtual DOM ) & UI layer and Data sync with each other
+
+
+Reconciliation algorithm (React fiber) :- 
+- The algorithm React uses to diff one tree with another to determine which parts need to be changed
+- https://github.com/acdlite/react-fiber-architecture
+
+Virtual DOM :- It is a representation of actual DOM (HTML Elems), It is a Js object of react element and component
+
+Diff Algorithm :- Tries to find out difference between from old virtual DOM and new virtual DOM (7 elements  -> clicked -> 4 elements)
+
+<!-- ========== End Section ========== -->
