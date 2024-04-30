@@ -1,0 +1,22 @@
+Date : 29/04/2024
+Monday
+
+<!-- ========== Start Section ========== -->
+
+Food delivery App
+
+Note :  - When you start making any piece of code or develop the website first thing which can you first is Take pen and paper and draw the idea of that site or wireframe/prototype that idea then start your work.
+
+Props - props is short form of properties, it can use for passing pros in the component init.
+Config Driven UI - controlling ui , how to show ui with help of data. Config getting from backend (Swiggy carousel can different for Mumbai, delhi)
+
+Frontend App - UI Layer + Data Layer both are make a good frontend app 
+
+Important to reusable components for handle the dynamic props 
+
+What is optional Chaining(?.)?
+
+Why We need to put key list elements? -> if you ‘re not write key in list elements then react js re render again all elements otherwise it’s only renders new elements and old as it. It is impact for performance.
+React as say like index is not using in map
+
+<!-- ========== End Section ========== -->
