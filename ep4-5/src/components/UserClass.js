@@ -10,7 +10,6 @@ class UserClass extends React.Component {
                 name: "Dummy",
                 location: "Dummy Location"
             }
-
         }
         // console.log(this.props.name + " Child Constructor");
     }

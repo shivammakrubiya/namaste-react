@@ -1,15 +1,18 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
 import Header from "./components/Header";
 import Body from "./components/Body";
-import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 import RestuarentMenu from "./components/RestaurentMenu";
+import Shimmer from "./components/Shimmer";
+
+//* Lazy Loading & on demand import
+const Grocery = lazy(() => import("./components/Grocery"))
+const About = lazy(() => import("./components/About"))
 
 //* App Layout
-
 const AppLayout = () => {
 
     return (
@@ -34,7 +37,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <About />
+                element: <Suspense fallback={<Shimmer />}><About /></Suspense>
             },
             {
                 path: "/contact",
@@ -43,6 +46,10 @@ const router = createBrowserRouter([
             {
                 path: "/restuarents/:resId",
                 element: <RestuarentMenu />
+            },
+            {
+                path: "/grocery",
+                element: <Suspense fallback={<Shimmer />}><Grocery /></Suspense>
             }
         ],
         errorElement: <Error />
