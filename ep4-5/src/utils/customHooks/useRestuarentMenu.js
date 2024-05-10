@@ -6,7 +6,7 @@ const useRestuarentMenu = (resId) => {
 
     useEffect(() => {
         fetchMenu()
-    })
+    },[])
 
     const fetchMenu = async () => {
         const res = await fetch(RESTAURENT_DETAIL + resId)

@@ -49,12 +49,12 @@ class UserClass extends React.Component {
         // console.log(this.props.name + " Child Render");
         const { name, location } = this.state.userInfo
         return (
-            <div className="user-card">
+            <div className="pl-5">
                 {/* <h1>Count : {count}</h1>
                 <button onClick={() => { this.setState({ count: this.state.count + 1 }) }}>Count Inrcease</button> */}
-                <h2>Name : {name}</h2>
-                <h3>location : {location}</h3>
-                <h3>Contact : @shiva111</h3>
+                <h2 className="py-1">Name : {name}</h2>
+                <h3 className="py-1">location : {location}</h3>
+                <h3 className="py-1">Contact : @shiva111</h3>
             </div>
         )
     }

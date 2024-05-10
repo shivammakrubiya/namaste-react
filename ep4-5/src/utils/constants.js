@@ -7,3 +7,5 @@ export const RESTAURENT_DETAIL = "https://www.swiggy.com/dapi/menu/pl?page-type=
 export const USER_API = "https://jsonplaceholder.typicode.com/users"
 
 export const ALL_RESTAURENTS = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.2315453&lng=72.8662668&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+
+export const FAKE_FOOD_IMAGE="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2FN3GAapX_H1m4e6yNZZlazfZHZcXLdAUbg&s"
