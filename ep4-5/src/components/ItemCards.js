@@ -1,6 +1,14 @@
 import { CDN_URL, FAKE_FOOD_IMAGE } from "../utils/constants"
+import { useDispatch } from "react-redux"
+import { addCart } from "../utils/store/cartSlice"
+
 const ItemCards = ({ items }) => {
     console.log("🚀 ~ ItemCards ~ items:", items)
+    const dispatch = useDispatch()
+
+    const handleClicked = (item) => {
+        dispatch(addCart(item))
+    }
     return (
         <ul>
             {items.map((item, index) => {
@@ -15,7 +23,7 @@ const ItemCards = ({ items }) => {
                         </div>
                         <div className="my-5">
                             <div className="absolute">
-                                <button className="bg-black text-white p-2 mx-5 mt-[75px] rounded-lg ">ADD+</button>
+                                <button className="bg-black text-white p-2 mx-5 mt-[75px] rounded-lg " onClick={() => handleClicked(item)}>ADD+</button>
                             </div>
                             <img src={item.card.info.imageId ? CDN_URL + item.card.info.imageId : FAKE_FOOD_IMAGE} alt="logo" className="rounded w-[100px] h-[100px]  " ></img>
                         </div>
